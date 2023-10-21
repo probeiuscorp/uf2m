@@ -1,0 +1,10 @@
+{
+  "type": "uf2m:cauldron",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "uf2m:meridian_biome_source"
+    },
+    "settings": "uf2m:meridian_noise"
+  }
+}

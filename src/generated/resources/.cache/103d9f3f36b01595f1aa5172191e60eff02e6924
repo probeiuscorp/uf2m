@@ -1,0 +1,8 @@
+// 1.19.4	2023-10-21T09:43:15.4258098	Registries
+30b6387b4bb4c92f3f5eef4dc5813525429a1e2e data/uf2m/dimension/cauldron.json
+5f7b5d53db0533023c3fa78d9ed01a98f9d98b9d data/uf2m/dimension/meridian.json
+9bb7478d12aa4ceae7a9800edac4999e40082d59 data/uf2m/dimension_type/cauldron.json
+f8966fd8e1c657da6344c6e4e0a869ccd97c8c1f data/uf2m/dimension_type/meridian.json
+aeb41a36211d49233d50ef3b29481e75d9f7f535 data/uf2m/worldgen/biome/meridian_midnight_zone.json
+fd0180933f2a711eed166330d93e4947869d1000 data/uf2m/worldgen/biome/meridian_wastes.json
+4e4cef6321f3962fcc4f44004b96a48cc459f229 data/uf2m/worldgen/noise_settings/meridian_noise.json

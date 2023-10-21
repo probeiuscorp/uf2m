@@ -34,6 +34,8 @@ minecraft {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
+            main 'io.github.probeiuscorp.uf2m.UF2M'
+
             workingDirectory project.file('run')
 
             // Recommended logging data for a userdev environment

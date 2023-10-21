@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "uf2m:block/inventor_bottom",
+    "east": "uf2m:block/inventor_side",
+    "north": "uf2m:block/inventor_side",
+    "particle": "uf2m:block/inventor_side",
+    "south": "uf2m:block/inventor_side",
+    "up": "uf2m:block/inventor_top",
+    "west": "uf2m:block/inventor_side"
+  }
+}
