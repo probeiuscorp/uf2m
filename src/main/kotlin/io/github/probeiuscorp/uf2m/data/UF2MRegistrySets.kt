@@ -18,19 +18,19 @@ import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider
 import java.util.concurrent.CompletableFuture
 
 class UF2MRegistrySets(output: PackOutput, registries: CompletableFuture<HolderLookup.Provider>) :
-    DatapackBuiltinEntriesProvider(output, registries, BUILDER, setOf(UF2M.MODID)) {
-    companion object {
-        val BUILDER: RegistrySetBuilder = RegistrySetBuilder()
-            .add(Registries.BIOME, UF2MBiomes::bootstrap)
-            .add(Registries.NOISE_SETTINGS, RegisterDimensions::bootstrapNoiseSettings)
-            .add(Registries.DIMENSION_TYPE, RegisterDimensions::bootstrapDimensionTypes)
-            .add(Registries.LEVEL_STEM, RegisterDimensions::bootstrapStems)
+  DatapackBuiltinEntriesProvider(output, registries, BUILDER, setOf(UF2M.MODID)) {
+  companion object {
+    val BUILDER: RegistrySetBuilder = RegistrySetBuilder()
+      .add(Registries.BIOME, UF2MBiomes::bootstrap)
+      .add(Registries.NOISE_SETTINGS, RegisterDimensions::bootstrapNoiseSettings)
+      .add(Registries.DIMENSION_TYPE, RegisterDimensions::bootstrapDimensionTypes)
+      .add(Registries.LEVEL_STEM, RegisterDimensions::bootstrapStems)
 
-        fun createLookup(): HolderLookup.Provider {
-            return BUILDER.buildPatch(
-                RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY),
-                VanillaRegistries.createLookup()
-            )
-        }
+    fun createLookup(): HolderLookup.Provider {
+      return BUILDER.buildPatch(
+        RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY),
+        VanillaRegistries.createLookup()
+      )
     }
+  }
 }

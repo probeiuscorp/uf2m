@@ -14,27 +14,27 @@ import net.minecraft.world.phys.BlockHitResult
 import org.slf4j.Logger
 
 class InventorBlock(properties: Properties) : Block(properties) {
-    override fun use(
-        state: BlockState,
-        level: Level,
-        pos: BlockPos,
-        player: Player,
-        hand: InteractionHand,
-        hit: BlockHitResult
-    ): InteractionResult {
-        LOGGER.info("Inventor used")
+  override fun use(
+    state: BlockState,
+    level: Level,
+    pos: BlockPos,
+    player: Player,
+    hand: InteractionHand,
+    hit: BlockHitResult
+  ): InteractionResult {
+    LOGGER.info("Inventor used")
 
-        if (level.isClientSide()) {
-            LOGGER.info("Client side")
-            Minecraft.getInstance().setScreen(InventorScreen(Component.literal("test test test")))
-        } else {
-            LOGGER.info("Server side")
-        }
-
-        return InteractionResult.SUCCESS
+    if (level.isClientSide()) {
+      LOGGER.info("Client side")
+      Minecraft.getInstance().setScreen(InventorScreen(Component.literal("test test test")))
+    } else {
+      LOGGER.info("Server side")
     }
 
-    companion object {
-        private val LOGGER: Logger = LogUtils.getLogger()
-    }
+    return InteractionResult.SUCCESS
+  }
+
+  companion object {
+    private val LOGGER: Logger = LogUtils.getLogger()
+  }
 }

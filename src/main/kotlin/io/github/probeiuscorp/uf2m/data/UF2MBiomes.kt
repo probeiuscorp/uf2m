@@ -8,13 +8,13 @@ import net.minecraft.resources.ResourceKey
 import net.minecraft.world.level.biome.Biome
 
 object UF2MBiomes {
-    @JvmField
-    val MERIDIAN_WASTES = createBiomeKey("meridian_wastes")
-    @JvmField
-    val MERIDIAN_MIDNIGHT_ZONE = createBiomeKey("meridian_midnight_zone")
+  @JvmField
+  val MERIDIAN_WASTES = createBiomeKey("meridian_wastes")
+  @JvmField
+  val MERIDIAN_MIDNIGHT_ZONE = createBiomeKey("meridian_midnight_zone")
 
-    fun bootstrap(context: BootstapContext<Biome>) {
-        context.register(MERIDIAN_WASTES, BiomeMeridianWastes.createMeridianWastesBiome(context))
-        context.register(MERIDIAN_MIDNIGHT_ZONE, BiomeMeridianMidnightZone.createMeridianMidnightZoneBiome(context))
-    }
+  fun bootstrap(context: BootstapContext<Biome>) {
+    context.register(MERIDIAN_WASTES, BiomeMeridianWastes.createMeridianWastesBiome(context))
+    context.register(MERIDIAN_MIDNIGHT_ZONE, BiomeMeridianMidnightZone.createMeridianMidnightZoneBiome(context))
+  }
 }

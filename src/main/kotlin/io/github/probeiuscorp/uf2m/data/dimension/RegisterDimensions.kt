@@ -9,21 +9,21 @@ import net.minecraft.world.level.dimension.LevelStem
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings
 
 object RegisterDimensions {
-    fun bootstrapDimensionTypes(context: BootstapContext<DimensionType>) {
-        DimensionMeridian.bootstrapDimensionType(context)
-        DimensionCauldron.bootstrapDimensionType(context)
-    }
+  fun bootstrapDimensionTypes(context: BootstapContext<DimensionType>) {
+    DimensionMeridian.bootstrapDimensionType(context)
+    DimensionCauldron.bootstrapDimensionType(context)
+  }
 
-    fun bootstrapStems(context: BootstapContext<LevelStem>) {
-        DimensionMeridian.bootstrapStem(context)
-        DimensionCauldron.bootstrapStem(context)
-    }
+  fun bootstrapStems(context: BootstapContext<LevelStem>) {
+    DimensionMeridian.bootstrapStem(context)
+    DimensionCauldron.bootstrapStem(context)
+  }
 
-    fun bootstrapBiomeSources() {
-        DimensionMeridian.bootstrapBiomeSource()
-    }
+  fun bootstrapBiomeSources() {
+    DimensionMeridian.bootstrapBiomeSource()
+  }
 
-    fun bootstrapNoiseSettings(context: BootstapContext<NoiseGeneratorSettings>) {
-        DensityMeridian.bootstrap(context)
-    }
+  fun bootstrapNoiseSettings(context: BootstapContext<NoiseGeneratorSettings>) {
+    DensityMeridian.bootstrap(context)
+  }
 }

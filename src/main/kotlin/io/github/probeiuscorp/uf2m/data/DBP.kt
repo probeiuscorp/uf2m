@@ -14,18 +14,18 @@ import net.minecraft.world.level.levelgen.SurfaceRules.RuleSource
  * Deboilerplate this god forsaken language
  */
 object DBP {
-    @JvmStatic
-    fun createNoiseKey(key: String): ResourceKey<NoiseGeneratorSettings> {
-        return ResourceKey.create(Registries.NOISE_SETTINGS, ResourceLocation(UF2M.MODID, key))
-    }
+  @JvmStatic
+  fun createNoiseKey(key: String): ResourceKey<NoiseGeneratorSettings> {
+    return ResourceKey.create(Registries.NOISE_SETTINGS, ResourceLocation(UF2M.MODID, key))
+  }
 
-    @JvmStatic
-    fun createBiomeKey(key: String): ResourceKey<Biome> {
-        return ResourceKey.create(Registries.BIOME, ResourceLocation(UF2M.MODID, key))
-    }
+  @JvmStatic
+  fun createBiomeKey(key: String): ResourceKey<Biome> {
+    return ResourceKey.create(Registries.BIOME, ResourceLocation(UF2M.MODID, key))
+  }
 
-    @JvmStatic
-    fun block(block: Block): RuleSource {
-        return SurfaceRules.state(block.defaultBlockState())
-    }
+  @JvmStatic
+  fun block(block: Block): RuleSource {
+    return SurfaceRules.state(block.defaultBlockState())
+  }
 }
